@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sfuzzie"
+version = "1.0.0"
+description = "simple fuzz functionality for python"
+authors = ["dsal3389 <dsal3389@foo.com>"]
+packages = [
+    { include="sfuzzie", from="src" }
+]
+readme="README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
